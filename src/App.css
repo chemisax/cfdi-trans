@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h5 {
+  -webkit-print-color-adjust:exact;
+  background-color: #d9d9d9;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-weight: 400;
+  margin-bottom: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  padding: 0;
+  margin: 0 0 4px;
+}
+
+.content {
+  padding-left: 6px;
+  padding-right: 6px;
+  width: 100%;
+}
+
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-col-1 {
+  padding-right: 4px;
+  padding-left: 4px;
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-col-2 {
+  padding-right: 4px;
+  padding-left: 4px;
+  flex: 2;
+  width: 100%;
+  overflow: hidden;
+}
+
+.flex-col-3 {
+  padding-right: 4px;
+  padding-left: 4px;
+  flex: 3;
+}
+
+.flex-col-4 {
+  padding-right: 4px;
+  padding-left: 4px;
+  flex: 4;
+}
+
+.small {
+  font-size: 14px;
+}
+
+.smaller {
+  font-size: 12px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-2 {
+  width: 50%;
+}
+
+.total {
+  margin: 20px 4px 10px;
+  font-size: 18px;
+  background-color: #d9d9d9;
+  padding: 4px 6px;
+  border-radius: 4px;
+  text-align: right;
+  -webkit-print-color-adjust:exact;
+
+}
+
+.qrcode {
+  max-width: 200px;
+}
+
+#qrcode img {
+  width: 100%;
+  height: auto;
+}
+
+.sello {
+  word-wrap: break-word;
+  word-break: break-all;
+  font-size: 10px;
+  padding-right: 10px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.conceptos {
+  margin-top: 15px;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.conceptosRow {
+  display: flex;
+}
+
+.conceptosRow > div {
+  padding: 4px 6px;
+}
+
+.conceptosRow.header {
+  -webkit-print-color-adjust:exact;
+  background-color: #d9d9d9;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.conceptosRow .unit {
+  flex: 1 1;
+}
+
+.conceptosRow .description {
+  flex: 4 4;
+}
+
+.conceptosRow .value {
+  flex: 2 2;
+  text-align: right;
+}
+
+.conceptosRow .quantity {
+  flex: 2 2;
+  text-align: right;
+}
+
+.conceptosRow .price {
+  flex: 2 2;
+  text-align: right;
+}
+
+.concepto {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.impuestos {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.impuesto {
+  border-top: 1px solid #ececec;
+  padding: 2px 0 2px 0;
+}
+
+.impuesto > div {
+  padding: 2px;
+}
+
+.subtotal {
+  text-align: right;
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+.footer {
+  margin-top: 20px;
 }
