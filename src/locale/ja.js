@@ -53,6 +53,7 @@ const locale = {
 
     //Regimenes fisacales
     regimen_612: '612 ビジネスおよび専門的活動を行う個人',
+    regimen_626: '626 簡素化信頼税制',
 
     //Metodos de pago
     pago_PUE: '一括払い',

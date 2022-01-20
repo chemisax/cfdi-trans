@@ -53,6 +53,7 @@ const locale = {
 
     //Regimenes fisacales
     regimen_612: '612 Personas Físicas con Actividades Empresariales y Profesionales',
+    regimen_626: '626 Régimen Simplificado de Confianza',
 
     //Metodos de pago
     pago_PUE: 'PUE - Pago en una sola exhibición',
