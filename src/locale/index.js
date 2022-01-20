@@ -6,8 +6,6 @@ let locales = {
     ja
 }
 
-console.log(locales);
-
 export default function translate (string) {
     if (!locales.hasOwnProperty(locale)) {
         return string;
