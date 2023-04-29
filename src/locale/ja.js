@@ -50,10 +50,12 @@ const locale = {
 
     //Usos CFDI
     usoCFDI_P01: '未定',
+    usoCFDI_S01: '税効果無し',
 
     //Regimenes fisacales
     regimen_612: '612 ビジネスおよび専門的活動を行う個人',
     regimen_626: '626 簡素化信頼税制',
+    regimen_616: '616 税負担なし',
 
     //Metodos de pago
     pago_PUE: '一括払い',
@@ -69,7 +71,7 @@ const locale = {
     // Tipos factors
     tipoFactor_Tasa: '割合',
 
-    footer: 'この資料は電子領収書バージョン3.3を印刷したものです。<br>スペイン語と日本語の情報に相違がある場合はスペイン語が正しいこととします。'
+    footer: 'この資料は電子領収書を印刷したものです。<br>スペイン語と日本語の情報に相違がある場合はスペイン語が正しいこととします。'
 }
 
 export default locale;

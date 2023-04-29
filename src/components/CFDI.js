@@ -30,14 +30,14 @@ export default class CFDI extends React.Component {
                 <div className="flex" style={{marginBottom: 10}}>
                     <div className="flex-col-1">
                         <h3>{cfdi.emisor.Nombre}</h3>
-                        <p>{t('rfc')}: {cfdi.emisor.Rfc}</p>
+                        <p>{cfdi.emisor.Rfc}</p>
                         <p className="small">
-                            {t('regimenFiscal')}<br />
-                            <strong>{t('regimen_'+cfdi.emisor.RegimenFiscal)}</strong>
+                            <strong>{t('regimenFiscal')}</strong><br />
+                            {t('regimen_'+cfdi.emisor.RegimenFiscal)}
                         </p>
                         <p className="small">
-                            {t('numeroCertidicado')}<br/>
-                            <strong>{cfdi.NoCertificado}</strong>
+                            <strong>{t('numeroCertidicado')}</strong><br/>
+                            {cfdi.NoCertificado}
                         </p>
                     </div>
                     <div className="flex-col-1 small">
@@ -73,7 +73,10 @@ export default class CFDI extends React.Component {
                                 <strong>{cfdi.receptor.Nombre}</strong>
                             </p>
                             <p>
-                                {t('rfc')} <strong>{cfdi.receptor.Rfc}</strong><br />
+                                <strong>{t('rfc')}</strong> {cfdi.receptor.Rfc}<br />
+                            </p>
+                            <p>
+                                <strong>{t('regimenFiscal')}</strong> {t('regimen_'+cfdi.receptor.RegimenFiscalReceptor)}<br />
                             </p>
                         </div>
                     </div>
@@ -153,7 +156,7 @@ export default class CFDI extends React.Component {
                     <div className="flex-col-1">
                         <p>
                             <strong>{t('tipoCambio')}</strong><br />
-                            {cfdi.TipoCambio}
+                            {cfdi.TipoCambio || "1.0"}
                         </p>
                     </div>
                 </div>
