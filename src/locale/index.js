@@ -1,17 +1,8 @@
 import ja from './ja';
+import es from './es';
 
-const locale = 'ja';
+const translator = dictionary => key => dictionary.hasOwnProperty(key) ? dictionary[key] : undefined;
 
-let locales = {
-    ja
-}
-
-export default function translate (string) {
-    if (!locales.hasOwnProperty(locale)) {
-        return string;
-    }
-    if (!locales[locale].hasOwnProperty(string)) {
-        return string;
-    }
-    return locales[locale][string];
-}
+// Devuelve undefined cuando no existe la traducción
+export const tJa = translator(ja);
+export const tEs = translator(es);

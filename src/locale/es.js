@@ -1,66 +1,79 @@
 const locale = {
 
-    // Head
-    rfc: 'RFC',
-    regimenFiscal: 'Régimen fiscal',
-    numeroCertidicado: 'Número de certificado',
-    factura: 'Factura',
-    serieFolio: 'Serie y Folio',
-    efecto: 'Efecto',
-    lugarExpedicion: 'Lugar de emisión',
-    fechaHora: 'Fecha y hora de emisión',
-    informacionCliente: 'Información del cliente',
-    otrosDatos: 'Otros datos',
-    uso: 'Uso del CFDI',
-    residenciaFiscal: 'Residencia fiscal',
-    numRegistroTrib: 'Número registro tributario',
-
-    // Conceptos
-    claveUnidad: 'Clave unidad',
-    descripcion: 'Descripción',
-    valorUnitario: 'Valor unitario',
-    cantidad: 'Cantidad',
-    importe: 'Importe',
-    codigoSat: 'Código SAT',
-
-    traslado: 'Traslado',
-    impuesto: 'Impuesto',
-    tipoFactor: 'Tipo factor',
-    tasaOCuota: 'Tasa o cuota',
-    base: 'Base',
-
-    subtotal: 'subtotal',
-    total: 'Total',
-
-    metodoDePago: 'Método de pago',
-    formaPago: 'Forma de pago',
+    // Header
+    emisor: 'Emisor',
+    factura: 'Factura electrónica',
+    fechaEmision: 'Fecha de emisión',
+    lugarExpedicion: 'Lugar de exp.',
+    moneda: 'Moneda',
     tipoCambio: 'Tipo de cambio',
 
-    folioFiscal: 'Folio fiscal',
-    rfcProvCert: 'RFC proveedor de certificación',
-    cadenaOriginal: 'Cadena original del timbre',
-    numeroCertSAT: 'Número de certificado SAT',
-    selloDigitalSat: 'Sello digital del SAT',
+    // Secciones
+    receptor: 'Receptor',
+    conceptos: 'Conceptos',
+    timbre: 'Timbre fiscal digital',
 
-    fechaHoraCert: 'Fecha y hora de certificación',
-    selloDigitalCFDI: 'Sello digital del CFDI',
+    // Receptor
+    rfc: 'RFC',
+    usoCFDI: 'Uso CFDI',
+    residenciaFiscal: 'Residencia fiscal',
+    numRegIdTrib: 'Núm. reg. id. tributario',
 
-    //Efectos
+    // Conceptos
+    unidad: 'Unidad',
+    descripcion: 'Descripción',
+    valorUnitario: 'P. unitario',
+    cantidad: 'Cantidad',
+    importe: 'Importe',
+    subtotal: 'Subtotal',
+    total: 'Total',
+
+    // Pago
+    metodoPago: 'Método de pago',
+    formaPago: 'Forma de pago',
+    exportacion: 'Exportación',
+
+    // Timbre
+    folioFiscal: 'Folio fiscal (UUID)',
+    fechaCertificacion: 'Fecha de certificación',
+    rfcProvCertif: 'RFC proveedor certif.',
+    noCertificadoSAT: 'No. certificado SAT',
+    noCertificadoEmisor: 'No. certificado emisor',
+    selloCFDI: 'Sello digital del CFDI',
+    selloSAT: 'Sello digital del SAT',
+    cadenaOriginal: 'Cadena original del complemento de certificación',
+
+    // Efectos
     efecto_I: 'Ingreso',
 
-    //Usos CFDI
-    usoCFDI_P01: 'P01 - Por definir',
+    // Regimenes fiscales
+    regimen_612: 'Personas Físicas con Actividades Empresariales y Profesionales',
+    regimen_616: 'Sin obligaciones fiscales',
+    regimen_626: 'Régimen Simplificado de Confianza',
 
-    //Regimenes fisacales
-    regimen_612: '612 Personas Físicas con Actividades Empresariales y Profesionales',
-    regimen_626: '626 Régimen Simplificado de Confianza',
+    // Usos CFDI
+    usoCFDI_P01: 'Por definir',
+    usoCFDI_S01: 'Sin efectos fiscales',
 
-    //Metodos de pago
-    pago_PUE: 'PUE - Pago en una sola exhibición',
+    // Residencias
+    residencia_JPN: 'Japón',
 
-    //Formas de pago
-    formaPago_03: '03 - Transferencia electrónica de fondos',
+    // Metodos de pago
+    metodoPago_PUE: 'Pago en una sola exhibición',
 
+    // Formas de pago
+    formaPago_03: 'Transferencia electrónica de fondos',
+
+    // Exportacion
+    exportacion_01: 'No aplica',
+
+    // Unidades
+    unidad_E48: 'Servicio',
+
+    // Productos y servicios
+    producto_81111510: 'Internet/intranet application development services',
+
+    // Impuestos
     impuesto_002: 'IVA'
 }
 

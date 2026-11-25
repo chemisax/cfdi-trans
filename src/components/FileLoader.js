@@ -46,9 +46,9 @@ export default class FileLoader extends React.Component {
                             return translado['cfdi:Traslado'][0].$
                         })
                     },
-                    conceptos: rawCFDI['cfdi:Conceptos'].map(row => {
-                        let concepto = row['cfdi:Concepto'][0].$;
-                        concepto.impuestos = row['cfdi:Concepto'][0]['cfdi:Impuestos'].map(row => {
+                    conceptos: rawCFDI['cfdi:Conceptos'][0]['cfdi:Concepto'].map(row => {
+                        let concepto = {...row.$};
+                        concepto.impuestos = (row['cfdi:Impuestos'] || []).map(row => {
                             return row['cfdi:Traslados'][0]['cfdi:Traslado'][0].$;
                         })
                         return concepto;

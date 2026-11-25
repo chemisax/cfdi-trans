@@ -1,77 +1,80 @@
 const locale = {
 
-    // Head
-    rfc: 'Tax ID',
-    regimenFiscal: '税制',
-    numeroCertidicado: '証明書番号',
+    // Header
+    emisor: '発行者',
     factura: '電子領収書',
-    serieFolio: '領収書番号',
-    efecto: '取引タイプ',
+    fechaEmision: '発行日時',
     lugarExpedicion: '発行場所',
-    fechaHora: '発行日時',
-    informacionCliente: '宛先',
-    otrosDatos: 'その他',
-    uso: '利用目的',
-    residenciaFiscal: '税務署',
-    numRegistroTrib: '法人番号',
+    moneda: '通貨',
+    tipoCambio: '為替レート',
+
+    // Secciones
+    receptor: '宛先',
+    conceptos: '明細',
+    timbre: '電子署名',
+
+    // Receptor
+    rfc: 'Tax ID',
+    usoCFDI: '利用目的',
+    residenciaFiscal: '税務上の居住地',
+    numRegIdTrib: '法人番号',
 
     // Conceptos
-    claveUnidad: '単位コード',
+    unidad: '単位',
     descripcion: '説明',
     valorUnitario: '単価',
     cantidad: '数量',
     importe: '小計',
-    codigoSat: '税務署コード',
-
-    traslado: '税金',
-    impuesto: '税',
-    tipoFactor: '因子',
-    tasaOCuota: '割合',
-    base: '小計',
-
     subtotal: '小計',
     total: '合計',
 
-    metodoDePago: '支払い回数',
+    // Pago
+    metodoPago: '支払い回数',
     formaPago: '支払い方法',
-    tipoCambio: '為替レート',
+    exportacion: '輸出',
 
+    // Timbre
     folioFiscal: '財政番号',
-    rfcProvCert: '証明プロバイダーTax ID',
-    cadenaOriginal: 'Certificate original chain',
-    numeroCertSAT: '税務署証明書番号',
-    selloDigitalSat: '税務署電子署名',
+    fechaCertificacion: '証明日時',
+    rfcProvCertif: '証明プロバイダー',
+    noCertificadoSAT: '税務署証明書番号',
+    noCertificadoEmisor: '発行者証明書番号',
+    selloCFDI: '電子領収書電子署名',
+    selloSAT: '税務署電子署名',
+    cadenaOriginal: '証明書の原本チェーン',
 
-    fechaHoraCert: '証明日時',
-    selloDigitalCFDI: '電子領収書電子署名',
-
-    //Efectos
+    // Efectos
     efecto_I: '入金',
 
-    //Usos CFDI
+    // Regimenes fiscales
+    regimen_612: 'ビジネスおよび専門的活動を行う個人',
+    regimen_616: '税負担なし',
+    regimen_626: '簡易信頼制度',
+
+    // Usos CFDI
     usoCFDI_P01: '未定',
     usoCFDI_S01: '税効果無し',
 
-    //Regimenes fisacales
-    regimen_612: '612 ビジネスおよび専門的活動を行う個人',
-    regimen_626: '626 簡素化信頼税制',
-    regimen_616: '616 税負担なし',
+    // Residencias
+    residencia_JPN: '日本',
 
-    //Metodos de pago
-    pago_PUE: '一括払い',
+    // Metodos de pago
+    metodoPago_PUE: '一括払い',
 
-    //Formas de pago
+    // Formas de pago
     formaPago_03: '電子資金移動',
 
-    impuesto_002: 'IVA 消費税',
+    // Exportacion
+    exportacion_01: '該当なし',
 
-    // Residencias
-    residencias_JPN: '日本',
+    // Unidades
+    unidad_E48: 'サービス',
 
-    // Tipos factors
-    tipoFactor_Tasa: '割合',
+    // Productos y servicios
+    producto_81111510: 'インターネット/イントラネット向けアプリ開発サービス',
 
-    footer: 'この資料は電子領収書を印刷したものです。<br>スペイン語と日本語の情報に相違がある場合はスペイン語が正しいこととします。'
+    // Impuestos
+    impuesto_002: '消費税'
 }
 
 export default locale;
